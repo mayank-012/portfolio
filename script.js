@@ -21,6 +21,10 @@ for (let section of sections) {
   for (let count = 0; count < children.length; count++) {
      children[count].setAttribute('style', 'transition-delay: ' + count * 0.5 + 's');
  }
+ const children1 = section.getElementsByClassName('fade-delay1');
+ for (let count = 0; count < children1.length; count++) {
+    children1[count].setAttribute('style', 'transition-delay: ' + 0 + 's');
+}
 observer.observe(section);
 }
 });
